@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 import re
 from apartment import Apartment
 
-def collect_garden_comm(name, url):
+def _collect_garden_comm(name, url):
     html = urlopen(url).read()
     soup = BeautifulSoup(html, "html.parser")
     list = []
@@ -23,25 +23,23 @@ def collect_garden_comm(name, url):
             curr.apt = apts[i].contents[0].strip()
             curr.rent = rents[i].contents[0].strip()
             curr.av_date = av_dates[i].contents[0].strip()
-            curr.info()
-    
-    for a in list: a.info()
+            list.append(curr)
     return list
 
 def collect_cvv():
-    return collect_garden_comm('Costa Verde Village', 'https://www.on-site.com/web/online_app/choose_unit?goal=6&attr=x20&property_id=1166&lease_id=0&unit_id=0&required=')
+    return _collect_garden_comm('Costa Verde Village', 'https://www.on-site.com/web/online_app/choose_unit?goal=6&attr=x20&property_id=1166&lease_id=0&unit_id=0&required=')
 
 def collect_towers():
-    return collect_garden_comm('Towers At Costa Verde','https://www.on-site.com/web/online_app/choose_unit?goal=6&attr=x20&property_id=1167&lease_id=0&unit_id=0&required=')
+    return _collect_garden_comm('Towers at Costa Verde','https://www.on-site.com/web/online_app/choose_unit?goal=6&attr=x20&property_id=1167&lease_id=0&unit_id=0&required=')
 
 def collect_360_lux():
-    return collect_garden_comm('360 Luxury','https://www.on-site.com/web/online_app/choose_unit?goal=6&attr=x20&property_id=191247&lease_id=0&unit_id=0&required=')
+    return _collect_garden_comm('360 Luxury','https://www.on-site.com/web/online_app/choose_unit?goal=6&attr=x20&property_id=191247&lease_id=0&unit_id=0&required=')
 
 def collect_lux():
-    return collect_garden_comm('Lux UTC', 'https://www.on-site.com/web/online_app/choose_unit?goal=6&attr=x20&property_id=225322&lease_id=0&unit_id=0&required=')
+    return _collect_garden_comm('Lux UTC', 'https://www.on-site.com/web/online_app/choose_unit?goal=6&attr=x20&property_id=225322&lease_id=0&unit_id=0&required=')
 
 def collect_crossroads():
-    return collect_garden_comm('La Jolla Crossroads', 'https://www.on-site.com/web/online_app/choose_unit?goal=6&attr=x20&property_id=21385&lease_id=0&unit_id=0&required=')
+    return _collect_garden_comm('La Jolla Crossroads', 'https://www.on-site.com/web/online_app/choose_unit?goal=6&attr=x20&property_id=21385&lease_id=0&unit_id=0&required=')
 
 def collect_la_regencia():
-    return collect_garden_comm('La Regencia', 'https://www.on-site.com/web/online_app/choose_unit?goal=6&attr=x20&property_id=1360&lease_id=0&unit_id=0&required=')
+    return _collect_garden_comm('La Regencia', 'https://www.on-site.com/web/online_app/choose_unit?goal=6&attr=x20&property_id=1360&lease_id=0&unit_id=0&required=')

@@ -7,5 +7,5 @@ class Apartment:
         self.av_date = "None"
     
     def info(self):
-        print ('{Name: ' + self.name + ', Plan: ' + self.plan + ', Apt: ' + self.apt + 
+        return ('{Name: ' + self.name + ', Plan: ' + self.plan + ', Apt: ' + self.apt + 
         ', Rent: ' + self.rent + ', Available: ' + self.av_date + '}')
