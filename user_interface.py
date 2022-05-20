@@ -2,17 +2,17 @@ import sys
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
-import rent_collector
+import price_collector
 
 def search():
     apt_list = ''
     curr = comm_box.currentText()
-    if(curr ==  'Costa Verde Village'):  apt_list = rent_collector.collect_cvv()
-    if(curr ==  'Towers at Costa Verde'):  apt_list = rent_collector.collect_towers()
-    if(curr ==  '360 Luxury'):  apt_list = rent_collector.collect_360_lux()
-    if(curr ==  'Lux UTC'):  apt_list = rent_collector.collect_lux()
-    if(curr ==  'La Jolla Crossroads'):  apt_list = rent_collector.collect_crossroads()
-    if(curr ==  'La Regencia'):  apt_list = rent_collector.collect_la_regencia()
+    if(curr ==  'Costa Verde Village'):  apt_list = price_collector.collect_cvv()
+    if(curr ==  'Towers at Costa Verde'):  apt_list = price_collector.collect_towers()
+    if(curr ==  '360 Luxury'):  apt_list = price_collector.collect_360_lux()
+    if(curr ==  'Lux UTC'):  apt_list = price_collector.collect_lux()
+    if(curr ==  'La Jolla Crossroads'):  apt_list = price_collector.collect_crossroads()
+    if(curr ==  'La Regencia'):  apt_list = price_collector.collect_la_regencia()
     infos = list_info(apt_list)
     result_label.setText(infos)
 

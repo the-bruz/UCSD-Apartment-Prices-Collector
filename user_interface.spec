@@ -28,7 +28,7 @@ exe = EXE(
     a.zipfiles,
     a.datas,
     [],
-    name='UCSD Rent Collector',
+    name='UCSD APT Prices Collector',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
