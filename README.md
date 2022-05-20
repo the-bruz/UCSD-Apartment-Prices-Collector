@@ -1,5 +1,5 @@
-# UCSD Rent Collector
-This is a crawler program written in Python to collect the rent of popular apartments around UCSD.
+# UCSD Apartment Prices Collector
+This is a crawler program written in Python to collect the prices of popular apartments around UCSD.
 
 ## Developer
 Bruce Zhou
