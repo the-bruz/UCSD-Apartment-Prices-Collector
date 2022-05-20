@@ -6,19 +6,13 @@ import rent_collector
 
 def search():
     apt_list = ''
-    match comm_box.currentText():
-        case 'Costa Verde Village':
-            apt_list = rent_collector.collect_cvv()
-        case 'Towers at Costa Verde':
-            apt_list = rent_collector.collect_towers()
-        case '360 Luxury':
-            apt_list = rent_collector.collect_360_lux()
-        case 'Lux UTC':
-            apt_list = rent_collector.collect_lux()
-        case 'La Jolla Crossroads':
-            apt_list = rent_collector.collect_crossroads()
-        case 'La Regencia':
-            apt_list = rent_collector.collect_la_regencia()
+    curr = comm_box.currentText()
+    if(curr ==  'Costa Verde Village'):  apt_list = rent_collector.collect_cvv()
+    if(curr ==  'Towers at Costa Verde'):  apt_list = rent_collector.collect_towers()
+    if(curr ==  '360 Luxury'):  apt_list = rent_collector.collect_360_lux()
+    if(curr ==  'Lux UTC'):  apt_list = rent_collector.collect_lux()
+    if(curr ==  'La Jolla Crossroads'):  apt_list = rent_collector.collect_crossroads()
+    if(curr ==  'La Regencia'):  apt_list = rent_collector.collect_la_regencia()
     infos = list_info(apt_list)
     result_label.setText(infos)
 
