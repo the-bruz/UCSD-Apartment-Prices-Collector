@@ -5,4 +5,5 @@ This is a crawler program written in Python to collect the rent of popular apart
 Bruce Zhou
 
 ## Update Log
+5/20/2022: Add a user interface.  
 5/19/2022: The program is now able to collect rent info from all garden community apartments.
