@@ -5,7 +5,7 @@ This is a crawler program written in Python to collect the prices of popular apa
 Bruce Zhou
 
 ## Getting Started
-For windows user, directly use the .exe file in the dist directory.  
+For windows user, directly download the .exe file.  
   
 For manual compiling:
 * Compile user_interface.py.  
