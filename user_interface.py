@@ -1,6 +1,7 @@
 import sys
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
+from PyQt5.QtGui import *
 import rent_collector
 
 def search():
@@ -22,6 +23,8 @@ def search():
     result_label.setText(infos)
 
 def list_info(list):
+    if (len(list) == 0):
+        return "No avaliable apartment found."
     info = ""
     for a in list:
         info += a.info() + '\n'
@@ -58,4 +61,5 @@ window.setLayout(window_layout)
 window.setFixedWidth(1000)
 window.setFixedHeight(600)
 window.show()
+app.setWindowIcon(QIcon('icon.ico'))
 app.exec()
