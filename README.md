@@ -6,6 +6,7 @@ Bruce Zhou
 
 ## Getting Started
 For windows user, directly use the .exe file in the dist directory.  
+  
 For manual compiling:  
 * Compile user_interface.py.  
 * Make sure that "pyqt5" and "beautifulsoup4" packages are installed.  
