@@ -1,6 +1,6 @@
 # UCSD Apartment Prices Collector
 This is a crawler program written in Python to collect the prices of popular apartments around UCSD.  
-![Alt text](/images/Screen Shot.jpg?raw=true "Optional Title")  
+![Alt text]('/images/Screen Shot.jpg')
 
 ## Developer
 Bruce Zhou
