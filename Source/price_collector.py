@@ -43,13 +43,13 @@ def collect_crossroads():
 def collect_la_regencia():
     return _collect_garden_comm('La Regencia', 'https://www.on-site.com/web/online_app/choose_unit?goal=6&attr=x20&property_id=1360&lease_id=0&unit_id=0&required=')
 
-def collect_regents_lajolla():
+def collect_regents_la_jolla():
     session = Session()
     html = session.get('https://www.regentslajolla.net/availableunits.aspx', headers={'User-Agent': 'Mozilla/5.0'}).content
     soup = BeautifulSoup(html, "html.parser")
     list = []
     for item in soup.find_all('tr', class_='AvailUnitRow'):
-        name = 'Regents LaJolla'
+        name = 'Regents La Jolla'
         sqft = item.find('td', attrs={'data-label': 'Sq. Ft.'}).contents[0]
         if (sqft == '753'): plan_name = 'Ruby 1b1b'
         if (sqft == '1102'): plan_name = 'Pearl 2b2b'

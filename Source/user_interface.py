@@ -15,7 +15,7 @@ def search():
     if(curr ==  'Lux UTC'):  apt_list = price_collector.collect_lux()
     if(curr ==  'La Jolla Crossroads'):  apt_list = price_collector.collect_crossroads()
     if(curr ==  'La Regencia'):  apt_list = price_collector.collect_la_regencia()
-    if(curr ==  'Regents LaJolla'):  apt_list = price_collector.collect_regents_lajolla()
+    if(curr ==  'Regents La Jolla'):  apt_list = price_collector.collect_regents_la_jolla()
     infos = list_info(apt_list)
     if (infos == 'No avaliable apartment found.'): result_label.setText(infos)
     else: result_label.setText(tabulate(infos))
@@ -35,7 +35,7 @@ app.setStyle('Fusion')
 
 comm_box = QComboBox()
 comm_box.addItems(['Costa Verde Village', 'Towers at Costa Verde', '360 Luxury', 
-'Lux UTC', 'La Jolla Crossroads', 'La Regencia', 'Regents LaJolla'])
+'Lux UTC', 'La Jolla Crossroads', 'La Regencia', 'Regents La Jolla'])
 comm_label = QLabel("Community:")
 comm_label.setBuddy(comm_box)
 
