@@ -9,7 +9,7 @@ For windows user, directly use the .exe file.
   
 For manual compiling:
 * Compile user_interface.py in the Source folder.  
-* Make sure that "pyqt5", "beautifulsoup4", and "requests" packages are installed.  
+* Make sure that "pyqt5", "beautifulsoup4", "tabulate“, and "requests" packages are installed.  
 
 ## Update Log
 ver1.2 5/20/2022  
