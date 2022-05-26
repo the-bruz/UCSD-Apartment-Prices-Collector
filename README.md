@@ -10,6 +10,22 @@ For windows user, directly use the .exe file.
 For manual compiling:
 * Compile user_interface.py.  
 * Make sure that "pyqt5", "beautifulsoup4", "tabulate“, and "requests" packages are installed.  
+* To install packages, use:  
+  <code>pip3 install pyqt5</code>  
+  <code>pip3 install beautifulsoup4</code>  
+  <code>pip3 install tabulate</code>  
+  <code>pip3 install requests</code>  
+
+## Support List
+* Costa Verde Village
+* Towers at Costa Verde
+* 360 Luxury
+* Lux UTC
+* La Jolla Crossroads
+* La Regencia 
+* Regents La Jolla
+* Regents Court (Unable to catch avaliable date due to its site structure)
+
 
 ## Update Log
 ver.1.3 5/25/2022  
