@@ -5,19 +5,11 @@ This is a crawler program written in Python to collect the prices of popular apa
 Bruce Zhou
 
 ## Getting Started
-Go [here](https://www.thebruz.com/rent_collector) for direct access to the apartment information.  
+For web access, go [here](https://www.thebruz.com/rent_collector).  
 
 For windows user, directly use the .exe file.  
 
-For manual compiling:
-* Compile user_interface.py.  
-* Make sure that "pyqt5", "beautifulsoup4", "tabulate“, and "requests" packages are installed.  
-* To install packages, use:  
-  <code>pip3 install pyqt5</code>  
-  <code>pip3 install beautifulsoup4</code>  
-  <code>pip3 install tabulate</code>  
-  <code>pip3 install requests</code>  
-
+For manual compiling, compile `user_interface.py`.
 ## Support List
 * Costa Verde Village
 * Towers at Costa Verde
@@ -30,6 +22,10 @@ For manual compiling:
 
 
 ## Update Log
+ver1.3.2 10/14/2022
+
+* Fix bugs due to the structure change of Regents Lajolla official site.
+
 ver1.3.1 09/03/2022
 
 * Support website access now.

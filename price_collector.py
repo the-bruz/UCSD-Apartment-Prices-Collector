@@ -50,7 +50,7 @@ def collect_regents_la_jolla():
     list = []
     for item in soup.find_all('tr', class_='AvailUnitRow'):
         name = 'Regents La Jolla'
-        sqft = item.find('td', attrs={'data-label': 'Sq. Ft.'}).contents[0]
+        sqft = item.find('td', attrs={'data-label': 'Sq.Ft.'}).contents[0]
         if (sqft == '753'): plan_name = 'Ruby 1b1b'
         if (sqft == '1102'): plan_name = 'Pearl 2b2b'
         if (sqft == '1110'): plan_name = 'Garnet 2b2b'
